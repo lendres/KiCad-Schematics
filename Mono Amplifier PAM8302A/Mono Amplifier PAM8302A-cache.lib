@@ -1,0 +1,119 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Amplifier_Audio_LE_PAM8302AAD
+#
+DEF Amplifier_Audio_LE_PAM8302AAD U 0 20 Y Y 1 F N
+F0 "U" 300 450 50 H V C CNN
+F1 "Amplifier_Audio_LE_PAM8302AAD" 300 350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS PAM8302AAS
+$FPLIST
+ MSOP*3x3mm*P0.65mm*
+ SOIC*3.9x4.9mm*P1.27mm*
+$ENDFPLIST
+DRAW
+S -300 300 300 -300 0 1 10 f
+X ~SD 1 -400 -200 100 R 50 50 1 1 I
+X NC 2 300 -200 100 L 50 50 1 1 N N
+X IN+ 3 -400 200 100 R 50 50 1 1 I
+X IN- 4 -400 0 100 R 50 50 1 1 I
+X OUT+ 5 400 200 100 L 50 50 1 1 P
+X VDD 6 0 400 100 D 50 50 1 1 W
+X GND 7 0 -400 100 U 50 50 1 1 W
+X OUT- 8 400 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L_Core_Ferrite_Small
+#
+DEF Device_L_Core_Ferrite_Small L 0 10 N N 1 F N
+F0 "L" 50 40 50 H V L CNN
+F1 "Device_L_Core_Ferrite_Small" 50 -50 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+P 2 0 1 0 30 -75 30 -65 N
+P 2 0 1 0 30 -55 30 -45 N
+P 2 0 1 0 30 -35 30 -25 N
+P 2 0 1 0 30 -15 30 -5 N
+P 2 0 1 0 30 5 30 15 N
+P 2 0 1 0 30 25 30 35 N
+P 2 0 1 0 30 45 30 55 N
+P 2 0 1 0 30 65 30 75 N
+P 2 0 1 0 40 -65 40 -75 N
+P 2 0 1 0 40 -45 40 -55 N
+P 2 0 1 0 40 -25 40 -35 N
+P 2 0 1 0 40 -5 40 -15 N
+P 2 0 1 0 40 15 40 5 N
+P 2 0 1 0 40 35 40 25 N
+P 2 0 1 0 40 55 40 45 N
+P 2 0 1 0 40 75 40 65 N
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Frequently_Used_LE_AGND
+#
+DEF Frequently_Used_LE_AGND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Frequently_Used_LE_AGND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X AGND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Frequently_Used_LE_C
+#
+DEF Frequently_Used_LE_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Frequently_Used_LE_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Frequently_Used_LE_R
+#
+DEF Frequently_Used_LE_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Frequently_Used_LE_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
